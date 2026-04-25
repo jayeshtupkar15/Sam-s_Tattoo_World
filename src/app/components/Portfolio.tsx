@@ -123,13 +123,19 @@ export default function Portfolio() {
             <span className="text-gray-400 text-sm tracking-[0.3em] mb-4 group-hover:text-[#c8a96e] transition-colors duration-300">
               CRAVING MORE INK?
             </span>
-            <div className="relative">
+            <div className="relative mb-4 md:mb-0">
               <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-wider hover-text-reveal" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Follow the journey on Instagram
               </span>
               <div className="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#c8a96e] transition-all duration-500 group-hover:w-full"></div>
             </div>
-            <div className="mt-6 flex items-center gap-2 text-[#c8a96e] opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            
+            {/* Mobile specific CTA */}
+            <div className="md:hidden mt-2 text-[#c8a96e] text-[10px] tracking-[0.4em] font-bold border border-[#c8a96e]/30 px-4 py-2 rounded-full animate-pulse">
+              CLICK HERE TO EXPLORE
+            </div>
+
+            <div className="hidden md:flex mt-6 items-center gap-2 text-[#c8a96e] opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
               <span className="text-xs tracking-[0.2em]">@TATTOOARTIST_SAM</span>
               <div className="w-8 h-[1px] bg-[#c8a96e]"></div>
             </div>

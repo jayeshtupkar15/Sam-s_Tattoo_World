@@ -37,35 +37,6 @@ export default function Footer() {
               </div>
             </div>
 
-            <div>
-              <h4 className="text-base md:text-lg mb-3 md:mb-4 tracking-wider">FOLLOW US</h4>
-              <div className="flex gap-3 md:gap-4">
-                <a
-                  href="https://instagram.com/noirinktattoo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#c8a96e] transition-colors"
-                >
-                  <Instagram size={20} className="md:w-6 md:h-6" />
-                </a>
-                <a
-                  href="https://facebook.com/noirinktattoo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#c8a96e] transition-colors"
-                >
-                  <Facebook size={20} className="md:w-6 md:h-6" />
-                </a>
-                <a
-                  href="https://twitter.com/noirinktattoo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#c8a96e] transition-colors"
-                >
-                  <Twitter size={20} className="md:w-6 md:h-6" />
-                </a>
-              </div>
-            </div>
           </div>
 
           <div className="border-t border-[#c8a96e]/20 pt-6 md:pt-8 text-center text-gray-500 text-xs sm:text-sm">

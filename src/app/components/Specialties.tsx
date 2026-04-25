@@ -58,26 +58,26 @@ export default function Specialties() {
           Specialties
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-8 sm:pb-0 scrollbar-hide snap-x snap-mandatory">
           {specialties.map((specialty, index) => {
             const Icon = specialty.icon;
             return (
               <div
                 key={index}
-                className={`bg-[#111] p-6 md:p-8 text-center transition-all duration-500 hover:translate-y-[-8px] hover:shadow-[0_10px_40px_rgba(200,169,110,0.2)] ${
+                className={`flex-shrink-0 w-[280px] sm:w-auto bg-[#111] p-8 text-center transition-all duration-500 hover:translate-y-[-8px] hover:shadow-[0_10px_40px_rgba(200,169,110,0.2)] snap-center ${
                   animatedCards.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
               >
-                <div className="flex justify-center mb-4 md:mb-6">
+                <div className="flex justify-center mb-6">
                   <Icon size={40} className="text-[#c8a96e] md:w-12 md:h-12" strokeWidth={1.5} />
                 </div>
                 <h3
-                  className="text-xl md:text-2xl mb-2 md:mb-3"
+                  className="text-xl md:text-2xl mb-3"
                   style={{ fontFamily: 'Playfair Display, serif' }}
                 >
                   {specialty.name}
                 </h3>
-                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm leading-relaxed">
                   {specialty.description}
                 </p>
               </div>
@@ -85,6 +85,15 @@ export default function Specialties() {
           })}
         </div>
       </div>
+      <style>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 }
