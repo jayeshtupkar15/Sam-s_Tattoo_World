@@ -83,19 +83,21 @@ export default function About() {
           </div>
 
           <div>
+            <div className="mb-2 text-[#c8a96e] tracking-[0.3em] text-xs uppercase font-medium">MEET THE VISIONARY</div>
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
-              The Artist
+              Sam Rathod
             </h2>
+            <div className="w-16 h-[2px] bg-[#c8a96e] mb-8"></div>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-6 md:mb-8">
               With over a decade of experience in the art of tattooing, I specialize in creating custom pieces that tell your story. From intricate realism to bold blackwork, each design is crafted with precision and passion. My studio is a sanctuary where your vision comes to life on skin.
             </p>
 
             <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 md:mt-12 pt-8 md:pt-12 border-t border-[#c8a96e]/20">
-              <AnimatedCounter end={12} label="YEARS EXPERIENCE" suffix="+" />
-              <AnimatedCounter end={850} label="TATTOOS DONE" suffix="+" />
+              <AnimatedCounter end={10} label="YEARS EXPERIENCE" suffix="+" />
+              <AnimatedCounter end={500} label="TATTOOS DONE" suffix="+" />
               <AnimatedCounter end={15} label="STYLES MASTERED" suffix="+" />
             </div>
           </div>

@@ -35,11 +35,16 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-6 w-full">
         <h1
-          className="text-[clamp(32px,12vw,120px)] leading-[1.1] sm:leading-none mb-4 tracking-tight px-2"
+          className="text-[clamp(32px,12vw,120px)] leading-[1.1] sm:leading-none mb-2 tracking-tight px-2"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           {revealedText}<span className="animate-pulse">|</span>
         </h1>
+        <div className="flex items-center justify-center gap-4 mb-6 md:mb-8">
+          <div className="h-[1px] w-8 md:w-12 bg-[#c8a96e]/30"></div>
+          <span className="text-xs md:text-sm tracking-[0.4em] text-white/60 font-light italic">By Sam Rathod</span>
+          <div className="h-[1px] w-8 md:w-12 bg-[#c8a96e]/30"></div>
+        </div>
         <p className="text-[10px] xs:text-xs sm:text-base md:text-xl lg:text-2xl tracking-[0.1em] sm:tracking-[0.3em] text-[#c8a96e] mb-8 sm:mb-12 uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>
           {tagline}
         </p>

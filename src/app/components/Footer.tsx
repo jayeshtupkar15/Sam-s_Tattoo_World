@@ -69,13 +69,13 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-[#c8a96e]/20 pt-6 md:pt-8 text-center text-gray-500 text-xs sm:text-sm">
-            <p>&copy; 2026 Noir Ink Studio. All rights reserved.</p>
+            <p>&copy; SAM’S TATTOO WORLD. All rights reserved.</p>
           </div>
         </div>
       </footer>
 
       <a
-        href="tel:+15551234567"
+        href="tel:+918149244404"
         className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#c8a96e] text-[#0a0a0a] px-8 py-4 rounded-full flex items-center gap-3 shadow-lg hover:bg-[#d4b57a] transition-colors z-40 font-semibold"
       >
         <Phone size={20} />
